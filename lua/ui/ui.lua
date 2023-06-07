@@ -29,17 +29,23 @@ function GruvLightBoxTheme()
 end
 
 function Kanagawa()
-	vim.cmd("colorscheme kanagawa")
-	-- vim.api.nvim_set_hl(0, "Normal", { bg = "#0c0c0c" })
-	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+	vim.cmd(":TransparentEnable")
+	vim.cmd("colorscheme kanagawa-dragon")
+	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 	vim.cmd("highlight! link SignColumn LineNr")
 end
 
+function Tundra()
+	vim.cmd(":TransparentEnable")
+	vim.opt.background = 'dark'
+	vim.cmd('colorscheme tundra')
+end
 
-Kanagawa();
+-- Kanagawa()
+Tundra()
 
--- vim.cmd("set winbar=%f")
--- vim.cmd(":TransparentDisable")
+vim.cmd("set winbar=%f")
 
 -- ColorMyPencils()
 -- GruvLightBoxTheme()
