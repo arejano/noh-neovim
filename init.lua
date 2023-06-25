@@ -1,5 +1,6 @@
 require "config.options"
 require "config.lazy"
+require "config.navbuddy"
 
 -- Start autocommands
 if vim.fn.argc(-1) == 0 then

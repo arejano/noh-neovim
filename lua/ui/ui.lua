@@ -45,7 +45,7 @@ end
 -- Kanagawa()
 Tundra()
 
-vim.cmd("set winbar=%f")
+-- vim.cmd("set winbar=%f")
 
 -- ColorMyPencils()
 -- GruvLightBoxTheme()
